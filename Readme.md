@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Дмитрий Чибисов](https://up.htmlacademy.ru/adaptive/22/user/610873).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
