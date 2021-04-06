@@ -1,0 +1,41 @@
+.page-header__image-wrapper {
+  position: relative;
+  padding-top: 51px;
+  min-height: 107px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/back-mobile.jpg");
+  background-size: cover;
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 85px;
+    min-height: 214px;
+    background-position: center;
+  }
+
+  &::after {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 57px;
+  }
+}
+
+.page-header__image {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  height: 40px;
+
+  &--index {
+    width: 282px;
+    height: 214px;
+  }
+}
