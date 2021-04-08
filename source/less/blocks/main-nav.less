@@ -54,7 +54,7 @@
 .main-nav__list {
   .list-reset(0);
 
-  color: @black;
+  color: @white;
   text-align: center;
   background-color: @bg-color-button;
 
@@ -80,6 +80,11 @@
   line-height: 40px;
 }
 
-.site-list__item:last-child .site-list__link {
-  box-shadow: 0 -7px 7px -7px fade(@black, 20%) inset;
+.site-list__link:not:first-child {
+  margin-top: 1px;
+}
+
+.site-list__item:last-child,
+.site-list__link {
+  box-shadow: inset 1px  rgba(255, 255, 255, 0.2);
 }
