@@ -3,42 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+  <div class="page-wrapper">
     <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+      <nav class="main-nav main-nav--no-js">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        </a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle main-nav__toggle--off" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+      </nav>
+      <div class="page-header__image-wrapper">
+        <img class="page-header__image" src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
       </div>
-    </nav>
-    <div class="page-header__image-wrapper">
-      <img src="img/sedona.png" alt="Добро пожаловать в Седону" class="page-header__image">
-    </div>
     </header>
   <main class="page-main">
     <header class="page-main__header page-main__header--catalog">
@@ -49,7 +51,7 @@
     <section class="page-main__photo-gallery">
       <h2 class="visually-hidden">Галерея фотографий</h2>
 
-      <article class="photo photo--full">
+      <div class="photo photo--full">
         <a href="#" class="photo__link">
           <picture>
             <img src="img/road.jpg" alt="Неродные просторы" class="photo__image">
@@ -73,9 +75,9 @@
             <span class="photo__like-count">1350</span>
           </div>
         </div>
-      </article>
+      </div>
 
-      <article class="photo">
+      <div class="photo">
         <a href="#" class="photo__link">
           <picture>
             <img src="img/cactus.jpg" alt="Местная растительность" class="photo__image">
@@ -99,8 +101,8 @@
             <span class="photo__like-count">143</span>
           </div>
         </div>
-      </article>
-      <article class="photo">
+      </div>
+      <div class="photo">
         <a href="#" class="photo__link">
           <picture>
             <img src="img/roadtothenorth.jpg" alt="Местная растительность" class="photo__image">
@@ -124,8 +126,8 @@
             <span class="photo__like-count">96</span>
           </div>
         </div>
-      </article>
-      <article class="photo">
+      </div>
+      <div class="photo">
         <a href="#" class="photo__link">
           <picture>
             <img src="img/cactus.jpg" alt="Местная растительность" class="photo__image">
@@ -149,7 +151,7 @@
             <span class="photo__like-count">254</span>
           </div>
         </div>
-      </article>
+      </div>
     </section>
     <section class="page-main__video">
       <header class="page-main__header page-main__header-video">
@@ -157,7 +159,7 @@
         <p class="page-main__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </header>
-      <article class="video">
+      <div class="video">
         <picture>
           <img src="img/video-mobile.jpg" alt="Видеопрезентация" class="video__image">
         </picture>
@@ -194,7 +196,7 @@
             </button>
           </div>
         </div>
-      </article>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -243,5 +245,6 @@
       <svg class="page-footer__copyright-icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
     </div>
   </footer>
+</div>
 </body>
 </html>
