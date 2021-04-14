@@ -1,0 +1,48 @@
+.photo {
+  padding: 22px 20px 21px;
+  border-bottom: 1px solid @border-color-photo;
+
+  &--full {
+    border-top: 1px solid @border-color-photo;
+  }
+}
+
+.photo__link {
+  display: block;
+}
+
+.photo__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo__description {
+  padding-top: 11px;
+  line-height: 24px;
+}
+
+.photo__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: @black;
+}
+
+.photo__author {
+  margin: 0;
+  text-transform: none;
+}
+
+.photo__likes {
+  margin-top: 10px;
+  display: flex;
+}
+
+.photo__like-count {
+  align-self: flex-end;
+  margin-left: 13px;
+  font-weight: 700;
+  color: @black;
+  line-height: 14px;
+}
