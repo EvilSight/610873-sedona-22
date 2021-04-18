@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 56px;
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     padding-bottom: 0;
   }
 }
@@ -35,6 +35,10 @@
   &::after {
     transform: translateY(-50%) rotate(-45deg);
   }
+
+  @media @tablet {
+    display: none;
+  }
 }
 
 .main-nav__toggle--off {
@@ -47,7 +51,6 @@
     width: 23px;
     height: 4px;
     background-color: @bg-color-button;
-    box-shadow: 0 9px 0 0 @bg-color-button, 0 18px 0 0 @bg-color-button;
   }
 
   &::after {
@@ -57,6 +60,14 @@
 
 .main-nav__list {
   .list-reset(0);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: @white;
+    color: black;
+  }
 
   color: @white;
   text-align: center;

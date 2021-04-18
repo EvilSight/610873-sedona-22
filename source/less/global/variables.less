@@ -2,10 +2,20 @@
 @tablet-width: 768px;
 @desktop-width: 1200px;
 
+@mobile: ~"(min-width: @{mobile-width})";
+@tablet: ~"(min-width: @{tablet-width})";
+@desktop: ~"(min-width: @{desktop-width})";
+
+@tablet-max-width: (@desktop-width - 1);
+@tablet-only: ~"(max-width: @{tablet-max-width})";
+
+@retina-dpi: 144dpi;
+@retina: ~"(min-resolution: @{retina-dpi})";
 
 @font-family-base: "PT Sans", "Arial", sans-serif;
 @font-size-base: 14px;
 @line-height-base: 21px;
+@font-color-base:#333333;
 
 @black: #000000;
 @white: #ffffff;
