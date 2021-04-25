@@ -61,7 +61,7 @@
 .main-nav__list {
   .list-reset(0);
 
-  @media (min-width: @tablet-width) {
+  @media @tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -79,10 +79,19 @@
 
   &:not(&--active):hover {
     background-color: @bg-color-button--hover;
+
+    @media @tablet {
+      background-color: @white;
+    }
   }
 
   &:not(&--active):active {
     color: fade(@black, 30%);
     background-color: @bg-color-button--active;
+
+
+    @media @tablet {
+      background-color: @white;
+    }
   }
 }
