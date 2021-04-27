@@ -10,4 +10,25 @@
   line-height: 26px;
   color: @white;
   text-align: center;
+
+  &:hover {
+    border-color: @bg-color-button--hover;
+    background-color: @bg-color-button--hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    border-color: @bg-color-button--active;
+    background-color: @bg-color-button--active;
+  }
+
+  &:focus {
+    border-color: @bg-color-button--hover;
+    outline: 0;
+  }
+
+  &:disabled {
+    border-color: @bg-color-button--disabled;
+    background-color: @bg-color-button--disabled;
+  }
 }
