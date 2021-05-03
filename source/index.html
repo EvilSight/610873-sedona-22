@@ -11,7 +11,10 @@
 <body class="page__body">
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--no-js">
+        <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+        </button>
         <a class="page-header__logo">
           <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
         </a>
@@ -37,9 +40,6 @@
               </a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--off" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
       </nav>
       <div class="page-header__image-wrapper page-header__image-wrapper--index">
         <img class="page-header__image page-header__image--index" src="img/text-index.png" alt="Добро пожаловать в Седону">
@@ -50,7 +50,7 @@
         <h1 class="visually-hidden">Сайт туристического городка в штате Аризона</h1>
         <header class="features__header">
           <h2 class="features__header-title">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
           </h2>
           <p class="features__header-text">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -188,6 +188,22 @@
       </div>
     </footer>
   </div>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
