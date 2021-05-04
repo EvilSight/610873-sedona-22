@@ -30,6 +30,19 @@
   color: @white;
   background-color: @bg-color-button;
 
+  &--active {
+    color: @font-color-item--active;
+  }
+
+  &--active:hover {
+    color: @font-color-item--hover;
+  }
+
+  &--active:active {
+    color: @font-color-item--active;
+    opacity: 0.3;
+  }
+
   @media @tablet {
     flex-basis: 20%;
     color: @font-color-base;
@@ -37,7 +50,7 @@
     background-color: transparent;
   }
 
-  &:nth-child(4n+3) {
+  &:nth-child(4n + 3) {
     @media @tablet {
       margin-left: auto;
     }
@@ -58,5 +71,10 @@
       color: @bg-color-button;
       background-color: transparent;
     }
+  }
+
+  &:not(&--active):active {
+    color: @black;
+    opacity: 0.3;
   }
 }
