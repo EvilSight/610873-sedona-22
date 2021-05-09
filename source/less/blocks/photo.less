@@ -1,4 +1,5 @@
 .photo {
+  position: relative;
   padding: 22px 20px 21px;
   border-bottom: 1px solid @border-color-photo;
 
@@ -46,16 +47,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 20px;
+    background-color: @bg-color-checkbox;
   }
 
-  // @media @desktop {
-  //   position: absolute;
-  //   z-index: 10;
-  //   bottom: 0;
-  //   width: 100%;
-  //   color: @white;
-  //   background-color: fade(@black, 30%);
-  // }
+  @media @desktop {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: calc(100% - 20px * 2);
+    color: @white;
+    background-color: fade(@black, 30%);
+  }
 }
 
 .photo__description {
@@ -70,9 +72,9 @@
   font-weight: 700;
   color: @black;
 
-  // @media @desktop {
-  //   color: @white;
-  // }
+  @media @desktop {
+    color: @white;
+  }
 }
 
 .photo__author {
@@ -86,7 +88,7 @@
 
   @media @tablet {
     padding-top: 0;
-    width: 85px;
+    width: 65px;
   }
 }
 
@@ -99,6 +101,7 @@
 
   @media @tablet {
     align-self: auto;
+    color: @black;
   }
 
   @media @desktop {
