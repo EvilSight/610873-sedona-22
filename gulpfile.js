@@ -21,10 +21,11 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
+    .pipe(gulp.dest("build/css"))
+    // .pipe(postcss([
+    //   autoprefixer(),
+    //   csso()
+    // ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
