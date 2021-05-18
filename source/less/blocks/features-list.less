@@ -1,7 +1,7 @@
 .features-list {
-  .list-reset(20px);
+  .list-reset(6.25%);
 
-  padding-right: 20px;
+  padding-right: 6.25%;
   background-color: @bg-color-map;
   text-align: center;
 
@@ -10,23 +10,28 @@
     flex-wrap: wrap;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media @desktop {
     justify-content: space-between;
   }
 }
 
 .features-list__item {
-  padding: 26px 26px 24px 26px;
+  box-sizing: border-box;
+  padding: 26px 15px 13px;
   border-bottom: 1px solid @border-color-item;
 
 
   @media @tablet {
-    max-width: 189px;
+    padding: 45px 49px 42px;
+    width: 33.333333%;
     border-bottom: none;
   }
 
   @media @desktop {
-    padding-bottom: 62px;
-    max-width: 315px;
+    padding-bottom: 61px;
+    max-width: 400px;
   }
 
   &:last-child {

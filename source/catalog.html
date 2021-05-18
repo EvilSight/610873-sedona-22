@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.svg" sizes="16х16" type="image.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 <body class="page__body">
   <div class="page-wrapper">
@@ -61,6 +61,9 @@
       <div class="photo photo--full">
         <a href="#" class="photo__link">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x , img/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x , img/photo-1-tablet@2x.jpg 2x">
             <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" class="photo__image">
@@ -88,6 +91,9 @@
       <div class="photo">
         <a href="#" class="photo__link">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x , img/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x , img/photo-2-tablet@2x.jpg 2x">
             <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" class="photo__image">
@@ -114,6 +120,9 @@
       <div class="photo">
         <a href="#" class="photo__link">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x , img/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x , img/photo-3-tablet@2x.jpg 2x">
             <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" class="photo__image">
@@ -140,6 +149,9 @@
       <div class="photo">
         <a href="#" class="photo__link">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x , img/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x , img/photo-4-tablet@2x.jpg 2x">
             <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" class="photo__image">
@@ -172,6 +184,9 @@
       </header>
       <div class="video">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x , img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x , img/video-tablet@2x.jpg 2x">
           <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видеопрезентация" class="video__image">
@@ -257,21 +272,6 @@
     </div>
   </footer>
 </div>
-<script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
   padding-top: 20px;
 
   @media @tablet {
-    padding-top: 0;
+    padding-top: 42px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -34,13 +34,13 @@
 
 .features__description {
   box-sizing: border-box;
-  padding: 39px 16px 35px 15px;
+  padding: 39px 16px 36px 15px;
   color: @white;
   background-color: @bg-color-button;
   text-align: center;
 
   @media @tablet {
-    padding: 45px 20px 26px;
+    padding: 45px 50px 26px;
     width: 33.333333%;
   }
 
@@ -49,23 +49,31 @@
   }
 
   &--first {
-    padding-top: 57px;
+    padding-top: 54px;
+
+    @media @tablet {
+      padding-top: 42px;
+    }
+
+    @media @desktop {
+      padding-top: 47px;
+    }
   }
 }
 
 .features__subtitle {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   color: @black;
 
   @media @tablet {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   @media @desktop {
-    max-width: 160px;
+    width: 157px;
   }
 
   &--main {
@@ -79,12 +87,21 @@
 }
 
 .features__text {
-  margin-top: 16px;
+  margin-top: 19px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: @font-family-base;
+  margin-bottom: 0;
 
   @media @tablet {
     margin-top: 22px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  @media @desktop {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 
@@ -112,29 +129,45 @@
 
   @media @desktop {
     position: absolute;
-    top: 56%;
-    transform: translateY(-54%);
-    height: auto;
   }
 }
 
 .features__header {
-  padding: 36px 18px 1px 17px;
+  padding: 36px 13px 12px 12px;
   text-align: center;
+
+  @media @tablet {
+    padding: 43px 13px 12px 12px;
+  }
+
+  @media @desktop {
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
 }
 
 .features__header-title {
   margin: 0;
-  padding-left: 5px;
-  padding-right: 5px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: @black;
+  font-family: @font-family-base;
+  letter-spacing: 0;
+
+  @media @tablet {
+    font-size: 21px;
+  }
 }
 
 .features__header-text {
   line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
   margin-top: 27px;
   margin-bottom: 0;
+
+  @media @tablet {
+    margin-top: 31px;
+  }
 }
