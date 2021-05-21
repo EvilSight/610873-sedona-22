@@ -5,13 +5,8 @@
 
   @media @tablet {
     padding: 0;
-    width: 50%;
     border-bottom: none;
     background-color: @bg-color-body;
-  }
-
-  @media @desktop {
-    width: 33.3%;
   }
 
   &--full {
@@ -24,6 +19,8 @@
 
     @media @desktop {
       width: 100%;
+      grid-column-start: 1;
+      grid-column-end: -1;
     }
   }
 }
