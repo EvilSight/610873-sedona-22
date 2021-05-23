@@ -47,7 +47,6 @@
 }
 
 .form-feedback__legend {
-  margin-bottom: 21px;
   width: 100%;
   text-align: center;
   float: left;
@@ -57,11 +56,29 @@
   @media @tablet {
     position: static;
     font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   &--name {
     @media @tablet {
       text-align: left;
+    }
+
+    @media @desktop {
+      margin-bottom: 57px;
+    }
+  }
+
+  &--contacts {
+    @media @desktop {
+      margin-bottom: 76px;
+    }
+  }
+
+  &--visited {
+    @media @desktop {
+      margin-bottom: 25px;
     }
   }
 
@@ -72,6 +89,14 @@
 
     @media @desktop {
       padding-left: 80px;
+    }
+  }
+
+  &--experience {
+    @media @desktop {
+      text-align: left;
+      padding-left: 80px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -99,7 +124,7 @@
     }
 
     @media @desktop {
-      padding-bottom: 44px;
+      padding-bottom: 0;
       width: 400px;
       margin-left: 79px;
     }
@@ -116,8 +141,8 @@
     }
 
     @media @desktop {
-      padding-top: 74px;
-      padding-bottom: 30px;
+      padding-top: 48px;
+      padding-bottom: 25px;
     }
   }
 
@@ -132,17 +157,17 @@
     }
 
     @media @desktop {
-      padding-bottom: 47px;
+      padding-bottom: 0;
     }
 
     &::after {
       @media @tablet {
         content: "";
         position: absolute;
-        top: 6px;
+        top: 16%;
         right: 0;
         width: 1px;
-        height: 79.5%;
+        height: 292px;
         background-color: @bg-color-striked;
         opacity: 0.3;
       }
@@ -160,8 +185,16 @@
     }
 
     @media @desktop {
-      padding-top: 42px;
-      padding-bottom: 34px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--visited ul {
+    @media @desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
@@ -170,7 +203,7 @@
 
     @media @tablet {
       order: 4;
-      padding-top: 58px;
+      padding-top: 16px;
       padding-bottom: 11px;
       width: 100%;
       min-height: 194px;
@@ -197,7 +230,7 @@
     }
 
     @media @desktop {
-      width: 22%;
+      width: 280px;
     }
   }
 
@@ -265,7 +298,7 @@
     }
 
     &::after {
-      background-image: url("../img/phone.svg");
+      background-image: url("../img/icons/phone.svg");
       background-size: 18px 18px;
     }
   }
@@ -277,7 +310,7 @@
     }
 
     &::after {
-      background-image: url("../img/mail.svg");
+      background-image: url("../img/icons/mail.svg");
       background-size: 16px 16px;
     }
   }
@@ -328,9 +361,9 @@
 .form-feedback__label-checkbox {
   position: relative;
   display: block;
-  padding-top: 13px;
+  padding-top: 21px;
   padding-bottom: 17px;
-  padding-left: 78px;
+  padding-left: 82px;
   width: 100%;
   font-size: 18px;
   font-weight: 700;
@@ -394,7 +427,7 @@
     padding-right: 75px;
 
     @media @desktop {
-      width: 258px;
+      width: 316px;
     }
   }
 
@@ -425,12 +458,13 @@
   }
 
   @media @desktop {
-    padding-bottom: 65px;
+    padding-bottom: 74px;
   }
 }
 
 .form-feedback__button {
   width: 100%;
+  text-transform: uppercase;
 
   @media @tablet {
     width: 50%;
@@ -516,6 +550,10 @@
     padding-bottom: 12px;
     min-height: 160px;
   }
+
+  @media @desktop {
+    margin-top: 55px;
+  }
 }
 
 .form-feedback__notification {
@@ -523,6 +561,9 @@
 
   @media @tablet {
     display: block;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 20px;
   }
 }
 
