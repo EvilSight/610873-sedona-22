@@ -1,7 +1,7 @@
 .advices {
-  padding-top: 19px;
+  padding-top: 15px;
   padding-right: 11px;
-  padding-bottom: 3px;
+  padding-bottom: 18px;
 
   .list-reset(70px);
 
@@ -62,7 +62,7 @@
   }
 
   &--house::before {
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/icons/icon-house.svg");
     background-size: 39px 37px;
 
     @media @tablet {
@@ -71,7 +71,7 @@
   }
 
   &--gift::before {
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icons/icon-gift.svg");
     background-size: 32px 38px;
 
     @media @tablet {
@@ -80,7 +80,7 @@
   }
 
   &--burger::before {
-    background-image: url("../img/icon-burger.svg");
+    background-image: url("../img/icons/icon-burger.svg");
     background-size: 40px 35px;
 
     @media @tablet {
@@ -113,8 +113,53 @@
   letter-spacing: 0;
 
   @media @tablet {
-    margin-top: 23px;
-    margin-bottom: 19px;
+    margin: 23px auto 40px auto;
     padding: 0 20px;
+  }
+
+  &--house {
+    @media @tablet {
+      width: 185px;
+    }
+
+    @media @desktop {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &--burger {
+    width: 180px;
+
+    @media @tablet {
+      width: 155px;
+    }
+
+    @media @desktop {
+      width: 283px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &--gift {
+    @media @tablet {
+      width: 192px;
+    }
+
+    @media @desktop {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.gift__br {
+  display: none;
+
+  @media @desktop {
+    display: block;
   }
 }

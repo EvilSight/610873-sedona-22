@@ -10,15 +10,15 @@
 <body class="page__body">
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--no-js">
+      <nav class="main-nav main-nav--opened main-nav--no-js">
         <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="page-header__logo">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img src="img/logotype-mobile.svg" alt="Седона">
+              <source media="(min-width: 1200px)" srcset="img/icons/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/icons/logotype-tablet.svg">
+              <img src="img/icons/logotype-mobile.svg" alt="Седона">
           </picture>
         </a>
           <ul class="main-nav__list site-list">
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
               </a>
             </li>
@@ -46,7 +46,7 @@
 
       </nav>
       <div class="page-header__image-wrapper">
-        <img class="page-header__image" src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+        <img class="page-header__image" src="img/icons/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
       </div>
     </header>
   <main class="page-main">
@@ -215,10 +215,10 @@
             <button class="video-controls__button video-controls__button--fullscreen" type="button">
               <span class="visually-hidden">Полный экран</span>
               <svg class="video-controls__icon video-controls__icon--fullscreen" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0V3V6H3V3H6V0H3H0Z" fill="#5C6870" />
-                <path d="M3 14H0V17V20H3H6V17H3V14Z" fill="#5C6870" />
-                <path d="M17 0H14V3H17V6H20V3V0H17Z" fill="#5C6870" />
-                <path d="M17 17H14V20H17H20V17V14H17V17Z" fill="#5C6870" />
+                <path d="M0 0V3V6H3V3H6V0H3H0Z" fill="#5C6870"/>
+                <path d="M3 14H0V17V20H3H6V17H3V14Z" fill="#5C6870"/>
+                <path d="M17 0H14V3H17V6H20V3V0H17Z" fill="#5C6870"/>
+                <path d="M17 17H14V20H17H20V17V14H17V17Z" fill="#5C6870"/>
               </svg>
             </button>
           </div>
@@ -272,6 +272,6 @@
     </div>
   </footer>
 </div>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

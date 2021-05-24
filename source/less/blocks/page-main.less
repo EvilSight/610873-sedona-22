@@ -10,33 +10,35 @@
     padding: 36px 6px 16px 8px;
 
     @media @tablet {
-      padding: 75px 0 72px;
+      padding: 63px 0 29px;
     }
 
     @media @desktop {
-      padding: 112px 0 58px;
+      padding: 114px 0 0;
     }
   }
 
   &--catalog {
-    padding: 32px 9px 20px 12px;
+    padding: 32px 14px 32px 16px;
 
     @media @tablet {
-      padding: 65px 0;
+      padding: 63px 0 80px 0;
     }
 
     @media @desktop {
-      padding: 102px 0 67px 0;
+      padding: 102px 0 80px 0;
     }
   }
 
   &--video {
-    padding: 32px 28px 33px 28px;
+    padding: 29px 28px 33px 28px;
 
     @media @tablet {
       margin: 0 auto;
       max-width: 450px;
       font-size: 21px;
+      margin-bottom: 45px;
+      padding: 59px 28px 33px 28px;
     }
   }
 }
@@ -99,12 +101,15 @@
     padding-left: 0;
     padding-right: 0;
     width: auto;
+    display: grid;
+    grid-template-rows: 400px 267px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 .page-main__video-gallery {
   margin: 0 auto;
-  padding-bottom: 105px;
+  padding-bottom: 117px;
 
   @media @tablet {
     padding-bottom: 41px;
@@ -112,7 +117,7 @@
   }
 
   @media @desktop {
-    padding-bottom: 85px;
+    padding-bottom: 94px;
     width: auto;
   }
 }
