@@ -81,14 +81,18 @@
             <span class="form-feedback__striked-text">Контактная информация:</span>
           </legend>
           <ul class="form-feedback__input-wrapper form-feedback__input-wrapper--contacts">
-            <li class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--phone">
-              <label class="form-feedback__label form-feedback__label--contacts" for="phone"><span class="form-feedback__label-aux">Контактный </span>телефон*:</label>
+            <li
+              class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--phone">
+              <label class="form-feedback__label form-feedback__label--contacts" for="phone"><span
+                  class="form-feedback__label-aux">Контактный </span>телефон*:</label>
               <input class="form-feedback__input-text form-feedback__input-text--contacts" type="tel" name="phone"
                 placeholder="Введите телефон" id="phone">
             </li>
-            <li class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--email">
+            <li
+              class="form-feedback__input-block form-feedback__input-block--contacts form-feedback__input-block--email">
               <label class="form-feedback__label form-feedback__label--contacts" for="email">Электронная почта*:</label>
-              <input class="form-feedback__input-text form-feedback__input-text--contacts" type="email" name="email" placeholder="Введите e-mail" id="email">
+              <input class="form-feedback__input-text form-feedback__input-text--contacts" type="email" name="email"
+                placeholder="Введите e-mail" id="email">
             </li>
           </ul>
         </fieldset>
@@ -209,6 +213,26 @@
       </div>
     </footer>
   </div>
+  <section class="modal-form modal-form--success">
+    <div class="modal-form__top">
+      <h2 class="modal-form__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-form__text modal-form__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В&nbsp;ближайшее время мы опубликуем его на сайте.<p>
+    </div>
+    <div class="modal-form__bottom modal-form__bottom--success">
+      <button type="button" class="button modal-form__button modal-form__button--success">Закрыть окно</button>
+    </div>
+  </section>
+  <section class="modal-form modal-form--failure">
+    <div class="modal-form__top modal-form__top--failure">
+      <h2 class="modal-form__title">Что-то пошло не&nbsp;так!</h2>
+      <p class="modal-form__text modal-form__text--failure">Проверьте поля, выделенные красным, скорее всего вы
+        забыли&nbsp;их заполнить</p>
+    </div>
+    <div class="modal-form__bottom modal-form__bottom--failure">
+      <button type="button" class="button modal-form__button modal-form__button--failure">OK</button>
+    </div>
+  </section>>
   <script src="js/script.min.js"></script>
 </body>
 
